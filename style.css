@@ -1,4 +1,15 @@
+
+:root{
+  --color1: #181bc9;
+  --color2: #1b3e76;
+  --color3: #fff;
+  --color4: #000;
+  --color5: #7274F2;
+  --color6: #BF0067;
+}
+
 body{
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -11,4 +22,9 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  color: var(--color6);
 }
