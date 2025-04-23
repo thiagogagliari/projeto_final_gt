@@ -1,4 +1,3 @@
-
 :root{
   --color1: #181bc9;
   --color2: #1b3e76;
@@ -22,9 +21,4 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-h1{
-  text-align: center;
-  color: var(--color6);
 }
