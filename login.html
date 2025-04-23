@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tela de Login</title>
-</head>
-<body>
-    <div class="container-login">
-        <div class="email">
-            <img class="imgLogin" src="assets/Captura de tela 2025-04-23 114635.png" alt="">
-            <p>Acesso a informação</p>
-            <label for="">Email</label>
-            <input type="email">
-       </div>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <title>GT Chat - Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <img src="/assets/logo-login.png" alt="" class="login-logo" />
+      <h2>Acesse sua conta</h2>
 
-       <div class="senha">
-            <label for="password">Senha:</label>
-            <input type="password">
-       </div>
+      <form action="login" method="post">
+        <div class="grupo-inputs">
+          <label for="usuario">Usuário</label>
+          <input type="text" id="usuario" name="usuario" required />
+        </div>
 
-        <button>Login</button>
+        <div class="grupo-inputs">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required />
+        </div>
 
-        <p>Não tem conta?</p>
+        <button type="submit">Entrar</button>
 
-        <button>Criar conta</button>
+        <div class="criar-conta">
+          <p>
+            Ainda não tem conta?
+            <a href="cadastro.html">Cadastre-se</a>
+          </p>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
