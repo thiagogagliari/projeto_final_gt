@@ -28,3 +28,32 @@ h1{
   text-align: center;
   color: var(--color6);
 }
+
+/* TELA DE LOGIN */
+
+.container-login{
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  margin: 200px auto;
+  color: var(--color3);
+  text-align: center;
+  background-color: var(--color1);
+}
+
+.container-login img{
+  width: 30%;
+  border-radius: 50px;
+}
+
+label{
+  display: flex;
+}
+
+button{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
