@@ -11,43 +11,42 @@
   </head>
   <body>
     <main>
-      
+      <div class="cadastro-container">
+        <img src="assets/logo-login.png" alt="logo do GT Chat" id="logo-icone">
+        <h1>Cadastrar conta</h1>
+  
+        <form action="cadastro" method="post">
+          <div class="grupo-inputs">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required>
+          </div>
+  
+          <div class="grupo-inputs">
+            <label for="data-nascimento">Data de nascimento </label>
+            <input type="date" name="data-nascimento" id="data-nascimento" required>
+          </div>
+  
+          <div class="grupo-inputs">
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf" minlength="8" maxlength="8" required/>
+          </div>
+  
+          <div class="grupo-inputs">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+  
+          <div class="grupo-inputs">
+            <label for="senha">Senha </label>
+            <input type="password" name="senha" id="senha" required>
+          </div>
+  
+          <button type="submit">Criar conta</button>
+        </form>
+      </div>
+      <div class="possui-conta">
+        <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
+      </div>
     </main>
-    <div class="cadastro-container">
-      <img src="assets/logo-login.png" alt="logo do GT Chat" id="logo-icone">
-      <h1>Cadastrar conta</h1>
-
-      <form action="cadastro" method="post">
-        <div class="grupo-inputs">
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" required>
-        </div>
-
-        <div class="grupo-inputs">
-          <label for="data-nascimento">Data de nascimento </label>
-          <input type="date" name="data-nascimento" id="data-nascimento" required>
-        </div>
-
-        <div class="grupo-inputs">
-          <label for="cpf">CPF</label>
-          <input type="number" name="cpf" id="cpf" minlength="8" maxlength="8" required/>
-        </div>
-
-        <div class="grupo-inputs">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-
-        <div class="grupo-inputs">
-          <label for="senha">Senha </label>
-          <input type="password" name="senha" id="senha" required>
-        </div>
-
-        <button type="submit">Criar conta</button>
-      </form>
-    </div>
-    <div class="possui-conta">
-      <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
-    </div>
   </body>
 </html>
