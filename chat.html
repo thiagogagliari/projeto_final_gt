@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/chat.css" />
+    <title>GT Chat - Salas Disponíveis</title>
+  </head>
+
+  <body>
+    <div class="chat-container">
+      <!-- BARRA LATERAL COM SALAS -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <h2>Salas Disponíveis</h2>
+        </div>
+
+        <div class="room-list">
+          <div class="room-item" data-room="javascript">
+            <img src="/assets/javascript.png" alt="javascript" />
+            <span>javascript</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/html.png" alt="html" />
+            <span>HTML</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/react.png" alt="react" />
+            <span>React</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/mysql.png" alt="MySql" />
+            <span>MySql</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/php.png" alt="PHP" />
+            <span>PHP</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/java.png" alt="Java" />
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AREA PRINCIPAL DO CHAT -->
+
+      <div class="main-chat">
+        <div class="chat-header">
+          <h2 class="select-room">Chat Online</h2>
+        </div>
+
+        <div class="message-container">
+          <!-- MENSAGENS SERÃO INSERIDAS AQUI VIA JAVASCRIPT-->
+          <div class="container-message">
+            <img src="/assets/profile.png" alt="" />
+            <h4>Thiago Gagliari</h4>
+            <p>A GT-10 é a melhor</p>
+          </div>
+          <div class="container-message">
+            <img src="/assets/ivan.png" alt="" />
+            <h4>Ivan Domingos</h4>
+            <p>Meu DESIGN ficou bonito?</p>
+          </div>
+          <div class="container-message">
+            <img src="/assets/none.png" alt="" />
+            <h4>Júlia Catapan</h4>
+            <p>Cadê a Jully, que não apareceu no chat ainda....</p>
+          </div>
+        </div>
+        <div class="message-input">
+          <input
+            type="text"
+            id="message"
+            placeholder="Digite uma mensagem..."
+          />
+          <button id="btn-send" class="send-message">
+            <i id="icon-send" class="fa fa-paper-plane fa-2x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -118,3 +118,27 @@ button:hover{
   color: var(--color8);
   transition: 1.2s;
 }
+
+.password-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color2);
+  cursor: pointer;
+}
+
+.password-container i:hover {
+  color: var(--color6);
+}
