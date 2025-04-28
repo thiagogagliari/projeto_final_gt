@@ -12,7 +12,6 @@
 
 -- Tela de Login e Cadastro responsiva com cores já setadas no root do projeto.
 -- Tela de cards com todas as linguagens...
--- Tela de Dashboard Aluno, Professor e Adm...
 
 ## FRONT-END Thiago, Julia and José
 
