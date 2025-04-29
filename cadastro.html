@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <title>GT Chat - Cadastro</title>
     <link rel="stylesheet" href="CSS/cadastro.css">
   </head>
@@ -15,38 +16,38 @@
         <img src="assets/logo-login.png" alt="logo do GT Chat" id="logo-icone">
         <h1>Cadastrar conta</h1>
   
-        <form action="cadastro" method="post">
+        <form>
           <div class="grupo-inputs">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required>
+            <input type="text" placeholder="Nome" name="nome" id="nome" required>
           </div>
   
           <div class="grupo-inputs">
-            <label for="data-nascimento">Data de nascimento </label>
-            <input type="date" name="data-nascimento" id="data-nascimento" required>
+            <input placeholder="Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="data-nascimento" id="data-nascimento" required/>
           </div>
   
           <div class="grupo-inputs">
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" id="cpf" minlength="8" maxlength="8" required/>
+            <input type="text" placeholder="CPF" name="cpf" id="cpf" minlength="14" maxlength="14" required/>
           </div>
   
           <div class="grupo-inputs">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" placeholder="E-mail" name="email" id="email" required>
           </div>
   
           <div class="grupo-inputs">
-            <label for="senha">Senha </label>
-            <input type="password" name="senha" id="senha" required>
+            <div class="password-container">
+              <input type="password" placeholder="Senha" name="password" id="password" required>
+            <i class="fas fa-eye" id="togglePassword"></i>
+            </div>
           </div>
   
-          <button type="submit">Criar conta</button>
+          <button type='button' onclick="cadastrar()">Criar conta</button>
         </form>
       </div>
       <div class="possui-conta">
         <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
       </div>
     </main>
+
+    <script src="JS/cadastro.js"></script>
   </body>
 </html>
