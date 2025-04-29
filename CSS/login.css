@@ -7,6 +7,7 @@
   --color6: #BF0067;
   --color7: #a8a9e6;
   --color8: #ee80cf;
+  --error: #b80a0a;
 }
 
 body{
@@ -141,4 +142,23 @@ button:hover{
 
 .password-container i:hover {
   color: var(--color6);
+}
+
+.mensagem-erro {
+  color: var(--error);
+  background-color: #fff0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: none;
+  font-weight: bold;
+}
+
+.input-error {
+  border: 3px solid var(--error) !important;
+  background-color: #fff0f0 !important;
+}
+
+.input-error::placeholder {
+  color: var(--error);
 }
