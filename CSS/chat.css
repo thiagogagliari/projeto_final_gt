@@ -94,9 +94,16 @@ html{
 }
 
 .chat-header{
+  display: flex;
+  justify-content: space-around;
   padding: 20px;
   margin-bottom: 1px solid var(--color4);
   background-color: var(--color6);
+}
+
+.chat-header i{
+  font-size: 40px;
+  color: var(--color3);
 }
 
 .chat-header h2{
