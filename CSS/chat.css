@@ -102,6 +102,11 @@ html{
   background-color: var(--color6);
 }
 
+.chat-header i{
+  font-size: 40px;
+  color: var(--color3);
+}
+
 .chat-header h2{
   display: inline;
   justify-content: center;
