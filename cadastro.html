@@ -10,7 +10,7 @@
     <title>GT Chat - Cadastro</title>
     <link rel="stylesheet" href="CSS/cadastro.css">
   </head>
-  <body>
+  <body onload="dataMax();">
     <main>
       <div class="cadastro-container">
         <img src="assets/logo-login.png" alt="logo do GT Chat" id="logo-icone">
@@ -22,11 +22,11 @@
           </div>
   
           <div class="grupo-inputs">
-            <input placeholder="Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="data-nascimento" id="data-nascimento" required/>
+            <input placeholder="Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" max="currentDate" name="data-nascimento" id="data-nascimento" required/>
           </div>
   
           <div class="grupo-inputs">
-            <input type="text" placeholder="CPF" name="cpf" id="cpf" minlength="14" maxlength="14" required/>
+            <input type="text" placeholder="CPF" name="cpf" id="cpf" oninput="this.value = this.value.replace(/[^0-9.-]/g, '')" minlength="14" maxlength="14" required/>
           </div>
   
           <div class="grupo-inputs">

@@ -14,15 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Data atual
-const today = new Date();
-const day = String(today.getDate()).padStart(2, '0');
-const month = String(today.getMonth() + 1).padStart(2, '0');
-const year = today.getFullYear();
-
-const currentDate = `${year}-${month}-${day}`;
-console.log(currentDate);
-
 // Máscara CPF
 let input = document.querySelector('#cpf')
 
@@ -37,6 +28,19 @@ input.addEventListener('keydown', () => {
     }
 })
 
+// Desabilita datas futuras no calendario 
+function dataMax() {
+  const dataAtual = new Date();
+  const ano = dataAtual.getFullYear();
+  const mes = String(dataAtual.getMonth() + 1).padStart(2, '0');
+  const dia = String(dataAtual.getDate()).padStart(2, '0');
+
+  const data = `${ano}-${mes}-${dia}`;
+  console.log(data)
+  document.getElementById('data-nascimento').max = data;
+}
+
+// Cadastro
 function cadastrar() {
     const nome = document.getElementById("nome").value
     const dataNascimento = document.getElementById("data-nascimento").value
