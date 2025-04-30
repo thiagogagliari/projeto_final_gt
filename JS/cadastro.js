@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // Máscara CPF
 let input = document.querySelector('#cpf')
 
-input.addEventListener('keydown', () => {
+input.addEventListener('keydown', (e) => {
     let inputLength = input.value.length
 
-    if (inputLength == 3 || inputLength == 7) {
+    if (e.key !== 'Backspace' && inputLength == 3 || e.key !== 'Backspace' && inputLength == 7) {
         input.value += '.'
     }
-    else if (inputLength == 11) {
+    else if (e.key !== 'Backspace' && inputLength == 11) {
         input.value += '-'
     }
 })
