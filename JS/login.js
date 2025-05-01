@@ -25,7 +25,7 @@ function acessar() {
   mensagemErro.style.display = "none";
 
   if (email.value === "user@user.com" && password.value === "123456") {
-    window.location.href = "./chat.html";
+    window.location.href = "./dashboard.html";
   } else {
     // Aplicar estilos de erro
     email.classList.add("input-error");

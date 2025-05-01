@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-login.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/CSS/chat.css" />
+    <title>GT Chat - Sala Front-End</title>
+  </head>
+
+  <body>
+    <div class="chat-container">
+      <!-- BARRA LATERAL COM SALAS -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <h2>Membros Online</h2>
+          <i class="bi bi-chat-dots-fill"></i>
+        </div>
+
+        <div class="room-list">
+          <div class="room-item">
+            <img src="/assets/ivan.png" alt="javascript" />
+            <span>Ivan Domingos</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/profile.png" alt="html" />
+            <span>Thiago Gagliari</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/none.png" alt="react" />
+            <span>Júlia Catapan</span>
+          </div>
+          <div class="room-item">
+            <img src="/assets/none.png" alt="react" />
+            <span>Jully Costa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AREA PRINCIPAL DO CHAT -->
+
+      <div class="main-chat">
+        <div class="chat-header">
+          <h2>Chat Front-End</h2>
+          <i id="search" class="bi bi-search" onclick="search()"></i>
+          <a href="./dashboard.html"><i class="bi bi-box-arrow-left"></i></a>
+        </div>
+
+        <!-- Nossa busca será injetada aqui -->
+        <div id="search-container" style="padding: 10px"></div>
+
+        <div class="message-container">
+          <!-- MENSAGENS SERÃO INSERIDAS AQUI VIA JAVASCRIPT-->
+          <div class="container-message">
+            <img src="/assets/profile.png" alt="" />
+            <h4>Thiago Gagliari</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+              ducimus officia cumque doloremque temporibus, at, laborum
+              voluptatem facere saepe modi nostrum enim quis iste. Placeat
+              delectus consectetur autem cupiditate qui!
+            </p>
+          </div>
+          <div class="container-message">
+            <img src="/assets/ivan.png" alt="" />
+            <h4>Ivan Domingos</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              dolores repudiandae ipsa molestiae, non maiores eaque beatae modi
+              eos pariatur deserunt dolor ipsum iusto facere. Neque cupiditate
+              perspiciatis illo enim!
+            </p>
+          </div>
+          <div class="container-message">
+            <img src="/assets/none.png" alt="" />
+            <h4>Júlia Catapan</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium saepe molestias voluptates optio laborum laudantium
+              repellat eaque explicabo. Eaque iure delectus culpa earum neque,
+              quisquam maiores, error nemo facilis asperiores perferendis nobis
+              sit pariatur doloribus a maxime! Illum obcaecati repellat qui?
+              Dignissimos recusandae quaerat repellat blanditiis aliquam illum
+              dolor, necessitatibus sunt sit. Laudantium dicta quae rem et,
+              porro quisquam quis fuga non. Consequatur facilis, magnam hic
+              voluptatem vero maxime corrupti fuga distinctio cupiditate
+              molestias debitis voluptas quae animi! Dolore quidem consequatur.
+            </p>
+          </div>
+          <div class="container-message">
+            <img src="/assets/none.png" alt="" />
+            <h4>Jully Costa</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+              ducimus officia cumque doloremque temporibus, at, laborum
+              voluptatem facere saepe modi nostrum enim quis iste. Placeat
+              delectus consectetur autem cupiditate qui!
+            </p>
+          </div>
+        </div>
+        <div class="message-input">
+          <input
+            type="text"
+            id="message"
+            placeholder="Digite uma mensagem..."
+          />
+          <button id="btn-send" class="send-message">
+            <i id="icon-send" class="fa fa-paper-plane fa-2x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/sala-front.js"></script>
+  </body>
+</html>
