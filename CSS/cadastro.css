@@ -1,0 +1,154 @@
+:root{
+  --color1: #181bc9;
+  --color2: #1b3e76;
+  --color3: #fff;
+  --color4: #000;
+  --color5: #7274F2;
+  --color6: #BF0067;
+  --color7: #a8a9e6;
+  --color8: #ee80cf;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+  background-image: url(/assets/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.cadastro-container {
+  background-color: #181bc9;
+  padding: 20px;
+  width: 400px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 1px 29px -2px #181bc9;
+  color: var(--color3);
+}
+
+#logo-icone {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 15%;
+    margin: 5px auto 20px;
+    object-fit: cover;
+}
+
+.grupo-inputs{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  color: var(--color3);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input{
+    font-size: 16px;
+    text-align: center;
+    color: var(--color2);
+    width: 90%;
+    padding: 5px;
+    border: 1px solid var(--color5);
+    border-radius: 5px;
+}
+
+input::placeholder {
+  color: var(--color2);
+}
+
+button{
+    width: 90%;
+    height: 32px;
+    padding: 5px;
+    margin: 10px 0px 5px 0px;
+    color: var(--color3);
+    background-color: var(--color5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: var(--color6);
+    color: var(--color3);
+    transition: 0.75s;
+}
+
+.possui-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.possui-conta p {
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.possui-conta a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.possui-conta a:hover {
+  color: var(--color8);
+  transition: 0.5s;
+}
+
+.password-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color2);
+  cursor: pointer;
+}
+
+.password-container i:hover {
+  color: var(--color6);
+}
